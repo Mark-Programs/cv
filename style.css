@@ -2,6 +2,16 @@ body {
     background-color: #eaf6f6;
 }
 
+hr {
+    background-color: white; 
+    /*NOTE: if trying to add a background color and it doesn't apply (when there is little done with CSS, it is possible the BROWSER is the cause since it applies a default, simplistic, css.  
+    To locate it: "search browser default css"
+        often will show elements and default CSS values
+    to change the background color, do this:
+    */
+    border-style: none; /* override the default value.  
+    Disappeared because the "box" disappeared  */
+}
 
 td.skill {
     padding-right: 150px;
