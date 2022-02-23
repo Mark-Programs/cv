@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+
+    <h2>My Contact Details</h2>
+    <table>
+        <tr>
+            <td>My Personal Address:</td>
+            <td>12345 Street Way</td>
+        </tr>
+        <tr>
+            <td>Phone:</td>
+            <td>(123)456-7890</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>mark@someemail.com</td>
+        </tr>
+    </table>
+    <hr>
+    <form action="mailto:info@mywebsite.com" method="post" enctype="text/plain">
+        <!--enctype states that the form will use plain text, intest of URL-type text (no spaces) -->
+        <!--Post means it will x-fer all field data into the email client -->
+        <label>Your Name:</label>
+        <input type="text" name="yourName" value=""> <br>
+        <label>Email Address:</label>
+        <input type="email" name="yourEmail" value=""> <br>
+        <!-- By listing type="email", it will LOOK for an @ sign in the field, but not .com, .org...-->
+        <label>Your Message:</label> <br>
+        <textarea name="yourMessage" id="name" cols="30" rows="10"></textarea> <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
