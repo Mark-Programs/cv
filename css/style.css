@@ -6,6 +6,12 @@ body.construction {
     background-color: seagreen;
 }
 
+img.profile {
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+
 h1, h3 {
     color: #66bfbf; /* the comman tells CSS it is two different things */
 }
