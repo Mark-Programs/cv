@@ -1,64 +1,173 @@
+/******* NOTES *************
+display: block/inline/inline-block/none;
+display: none; <- it is like it was never there, removes it from the page
+    - visibility: hidden; <- hides the contents, but the element size still exists and its effect on the page still has weight
+display: block;
+    these elements block anything else as they take up the WHOLE PAGE L<>R
+    - applies to <p>, <h1> through <h6>, <div> <ol>/<ul>, and <form>
+
+Common INLINE elements:  <span> <img> <a>
+
+Elements occupying the same line and able to set their width
+    - use "display: inline-block;
+
+position: static/relative/absolute/fixed;
+    - static by default
+
+coordinates top/bottom/left/right <- used with relative
+
+***************************/
+
+/****** TAGS *******/
 body {
-    background-color: #eaf6f6;
-}
-
-body.construction {
-    background-color: seagreen;
-}
-
-img.profile {
-    border-radius: 50%;
-    height: 80%;
-    width: 80%;
-}
-
-h1, h3 {
-    color: #66bfbf; /* the comman tells CSS it is two different things */
-}
-
-h3.pages {
-    padding: 10px 0px 10px 60px;
-}
-
-h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-h1.construction {
-    border: 4px solid #8c8c8c;
-    border-block: 1px;
-    border-radius: 20px;
-    border-width: 50%;
-    color: white;
-    display: block;
-    height: 50%;
-    margin: 30% auto auto auto;
-    text-align: center;
-    width: 30%;
+  background-color: #e4f9f5;
+  text-align: center;
+  margin: 0;
 }
 
 hr {
-    background-color: none; 
-    /*
-    NOTE: if trying to add a background color and it doesn't apply (when there is little done with CSS, it is possible the BROWSER is the cause since it applies a default, simplistic, css.  
-    To locate it: "search browser default css"
-        often will show elements and default CSS values
-    to change the background color, do this:
-    */
-     /* override the default value.  
-    Disappeared because the "box" disappeared (below)  */
-    border-color: grey;
-    border-top: 6px;
-    border-style: dotted none none none;
-    height: 0px;
-    width: 10%;
+  background-color: none; 
+  border-color: grey;
+  border-top: 6px;
+  border-style: dotted none none none;
+  height: 0px;
+  width: 10%;
+  color: lightgray;
 }
 
-form {
-    text-align: center;
+h2 {
+  color: #00ad85;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 200%;
 }
 
-td.skill {
-    align-content: center;
-    padding-right: 150px;
-} 
+h3 {
+  color: #00ad85;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 150%;
+}
+
+p {
+  font-family: 'Inconsolata', monospace;
+  font-size: 125%
+}
+
+a:hover {
+  color: #eaf6f6;
+}
+
+/****** CLASSES ******/
+.top-container {
+  background-color: #e4f9f5;
+  text-align: center;
+}
+
+.top_top {
+  margin: 300px auto 0 auto;
+}
+
+
+.top_bottom {
+  margin: 10px auto 0 auto;
+}
+
+.middle-container {
+  background-color: #fff;
+  
+}
+
+.bottom-container {
+  background-color: #11999e;
+  margin-top: 10px;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.cloud-rt {
+  position: absolute;
+  right: 20%;
+  top: 270px;
+}
+
+.cloud-lt {
+  left: 25%;
+  top: 375px;
+  position: absolute;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.contact {
+  margin: 0 30%;
+}
+
+.contact-me {
+  padding: 50px 0;
+}
+
+.footer-link:hover {
+  background-color: gold;
+  border: 4px #eaf6f6 solid;
+  color: #eaf6f6;
+  padding: 35px 0 5px 0;
+}
+
+.profile {
+  display: inline-block;
+  padding: 100px 0;
+}
+
+.ref-link {
+  color: #68A5A5;
+  font-size: 0.6rem;
+
+}
+
+.skills {
+  padding: 50px 0;
+}
+
+.skill-row {
+  padding: 20px 25%;
+}
+
+.thumb {
+  text-align: center;
+  padding: 10px 10px 0;
+}
+
+.web-bottom {
+  background-color: #FFF;
+}
+/****** ID *******/

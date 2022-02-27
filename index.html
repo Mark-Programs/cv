@@ -1,101 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark's Personal Site</title>
-    <link rel='stylesheet' href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <title>Mark Wilkinson</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico">
-
-    <!-- Note:  the <style></style> tags go here for INTERNAL CSS (not used)-->
 </head>
-
 <body>
-    <table cellspacing="20px">
-        <tr>
-            <td>
-                <img class="profile" src="images/me.JPG" alt="mark profile picture (TEMP)">
-            </td>
-            <td>
-                <h1>Mark Wilkinson</h1>
-                <p>Changing my skill set from IT to Web Development. <br>
-                    I run off coffee. ☕</p>
-            </td>
-        </tr>
-    </table>
-    <br>
-    <p>NOTE: This is a work in progress as I take my bootcamp course!</p>
+    <div class="nav">
 
-
-    <hr>
-    <h3>Training</h3>
-    <ul>
-        <li>2022 Web Development Bootcamp</li>
-        <li>Git & GitHub</li>
-        <li>JavaScript</li>
-        <li>HTML / CSS</li>
-        <li>React</li>
-        <li>PSQL / SQL</li>
-        <li>MongoDB</li>
-        <li>Node.js</li>
-    </ul>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing='10'>
-        <thead>
-            <tr>
-                <th>Dates</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2021-Present</td>
-                <td>Network Systems Administrator at Reynolds and Reynolds</td>
-            </tr>
-            <tr>
-                <td>2018-2021</td>
-                <td>Data Center Technician at Reynolds and Reynolds</td>
-            </tr>
-            <tr>
-                <td>2013-2018</td>
-                <td>Owner/Photographer MW Photo and Art</td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10px">
-
-        <tr>
-            <td class="skill">JavaScript</td>
-            <td>⭐⭐</td>
-            <td></td>
-            <td class="skill">Photography</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td class="skill">Python</td>
-            <td>⭐⭐</td>
-            <td></td>
-            <td class="skill">CSS</td>
-            <td>⭐⭐</td>
-        </tr>
-        <tr>
-            <td class="skill">HTML</td>
-            <td>⭐⭐⭐⭐</td>
-            <td></td>
-            <td class="skill">PSQL</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-    </table>
     </div>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact.html">Contact Me</a>
-</body>
+    <!-- DIV: CONTENT DIVISION ELEMENT -->
+    <div class="top-container">
+        <div class="top_top">
+        <img class="cloud-rt" src="images/cloud.png" alt="cloud-background">
+        <img class="intro" src="images/intro1.png" alt="I'm Mark">
+    </div>
+    <div class="top_bottom">
+        <p>a web developer.</p>
+        <img class="cloud-lt" src="images/cloud.png" alt="cloud-background">
+    </div>  
+    <img class="mountain" src="images/mountain.png" alt="mountain-background">
+    </div>
 
+
+    <div class="middle-container">
+        <div class="profile">
+            <img class="profile" src="images/sm-avatar.png" alt="my-avatar-image"> 
+            <h2>Hello.</h2>
+            <p>I am a Web Developer who also enjoys messing with Python.<br>
+                Coffee keeps me coding.</p>
+        </div>
+        <hr>
+        <div class="skills">
+            <h2 class="provide">What I can provide.</h2>
+            <div class="skill-row">
+                <img class="skill-img" src="images/sm-code-screen.jpg" alt="coding-monitor">
+
+                <h3>Web Development and Programming</h3>
+                <p>From developing a website, web application, or even sorting through data exported from an Excel file, I can offer assistance.</p>
+            </div>
+            <div class="skill-row">
+                <img class="skill-img" src="images/electronics.png" alt="circuit-image">
+                <h3>Electronics</h3>
+                <p>Thirteen years of electronics experience paved the way to my focus on software and web development.  I strive to keep sites simple and to the point, offering a clean experience for end users without clutter.</p>
+            </div>
+            <div class="skill-row">
+                <img class="skill-img" src="images/cam.png" alt="aperture-img">
+                <h3>Photography</h3>
+                <p>For several years I was a professional photographer, getting several sets published in magazines.  It helped to develop my eye for style and colors.  This trait drastically improves my web design abilities.</p>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="contact-me">
+            <h2>Get in Touch</h2>
+            <h3>Follow me on Twitter!</h3>
+            <p class="contact">I am often found on Twitter trying my best to participate in what we call "Tech Twitter".  For those who don't know, it is just a bunch of geeks that geek out on tech.  Feel free to contact me by my programming email account below!</p>
+            <a class="btn" href="mailto:codewithklrguy@gmail.com">Contact Me</a>
+        </div>
+    </div>
+
+    <div class="bottom-container">
+        <a class="footer-link" href="https://twitter.com/markprograms"><img class="thumb" src="images/twitter.jpg" alt="twitter-image"></a>
+        <a class="footer-link" href="https://www.linkedin.com/in/mark-wilkinson-96575848/"><img class="thumb" src="images/linkedin.jpg" alt="linkin-image"></a>
+        <a class="footer-link" href="https://github.com/Mark-Programs"><img class="thumb" src="images/github.jpg" alt="github-image"></a>
+        <p class="copyright">© 2022 Mark Wilkinson.</p>
+        
+        <a class="ref-link" href="https://www.flaticon.com/free-icons/" title="icons">Camera and electronics Icons created by Freepik - Flaticon</a>
+    </div>
+   
+</body>
 </html>
