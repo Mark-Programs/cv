@@ -113,12 +113,12 @@ a:hover {
 .cloud-rt {
   position: absolute;
   right: 20%;
-  top: 270px;
+  top: 250px;
 }
 
 .cloud-lt {
   left: 25%;
-  top: 375px;
+  top: 400px;
   position: absolute;
 }
 
